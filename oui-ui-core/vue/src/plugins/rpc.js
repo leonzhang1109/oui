@@ -20,7 +20,7 @@ rpc.request = function (method, params, timeout) {
     }
 
     axios.post('/rpc', req, {
-      timeout: timeout
+      timeout
     }).then(res => {
       res = res.data
 

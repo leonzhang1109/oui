@@ -87,7 +87,7 @@ export default {
     },
     onLangClick (item) {
       const lang = item.key
-      this.$rpc.call('ui', 'set_lang', { lang: lang }).then(({ lang }) => {
+      this.$rpc.call('ui', 'set_lang', { lang }).then(({ lang }) => {
         this.$store.commit('setLang', lang)
         if (lang === 'auto') { lang = navigator.language.toLowerCase() }
 
